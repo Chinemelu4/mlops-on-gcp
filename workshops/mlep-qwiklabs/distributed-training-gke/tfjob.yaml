@@ -26,10 +26,13 @@ spec:
         spec:
           containers:
             - name: tensorflow
-              image: gcr.io/qwiklabs-gcp-00-892c82824b11/mnist-train
+              image: gcr.io/qwiklabs-gcp-00-
+892c82824b11/mnist-train
               args:
                 - --epochs=5
                 - --steps_per_epoch=100
                 - --per_worker_batch=64
-                - --saved_model_path=gs://qwiklabs-gcp-00-892c82824b11-bucket/saved_model_dir
-                - --checkpoint_path=gs://qwiklabs-gcp-00-892c82824b11-bucket/checkpoints
+                - --saved_model_path=gs://qwiklabs-gcp-00-
+892c82824b11-bucket/saved_model_dir
+                - --checkpoint_path=gs://qwiklabs-gcp-00-
+892c82824b11-bucket/checkpoints
